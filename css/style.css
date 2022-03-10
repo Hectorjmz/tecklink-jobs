@@ -152,10 +152,7 @@
     /* MAIN*/
     /* ----------------------------------------------------------------- */
     
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
+    .container {}
     
     .search-form {
         display: flex;
@@ -196,15 +193,17 @@
     
     .job-type {
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        justify-content: center;
+        gap: 2.5rem;
     }
     
     .job-type-card {
         position: relative;
         min-width: 280px;
         height: 150px;
-        width: 100%;
+        width: 300px;
         margin-top: 2rem;
         margin-bottom: -4rem;
         /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(219, 236, 255, 1) 100%); */
@@ -244,8 +243,8 @@
     .card {
         display: flex;
         flex-direction: column;
-        min-width: 280px;
-        height: auto;
+        height: 600px;
+        width: 300px;
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(219, 236, 255, 1) 100%);
         align-self: center;
         border-radius: 20px;
@@ -293,6 +292,64 @@
     /* ----------------------------------------------------------------- */
     /* MAIN */
     /* ******* */
+    
+    @media screen and (min-width: 664px) {
+        .job-type-card {
+            width: 640px;
+        }
+    }
+    
+    @media screen and (min-width: 1012px) {
+        .job-type {
+            align-self: center;
+            max-width: 1000px;
+            gap: 2rem;
+        }
+        .job-type-card {
+            width: 980px;
+        }
+        .card {
+            height: 520px;
+            width: 221px;
+            border-radius: 20px;
+        }
+        .card h2 {
+            font-weight: 500;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            font-size: 1.4rem;
+        }
+        .card h3 {
+            padding-left: 1rem;
+            font-weight: 300;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .card p {
+            font-weight: 100;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem auto;
+            align-items: center;
+            border: 2px solid #2B89EA;
+            border-radius: 10px;
+            width: 150px;
+            height: 30px;
+            font-size: 1rem;
+            padding: 1rem;
+            color: #2B89EA;
+            text-decoration: none;
+            align-self: center;
+        }
+        .logo-recruiter {
+            align-self: center;
+            margin-bottom: 1rem;
+        }
+    }
     
     @media screen and (min-width: 750px) {
         .content {
