@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@100;300;400&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="logo">
+                <img src="./images/header/TeckLink Logo.svg" alt="">
+                <span>TeckLink</span>
+            </div>
+            <div id="menu-desktop" class="menu-desktop hide-on-desktop">
+                <div class="sub-menu">
+                    <img src="./images/header/Logo-workshop.svg" alt="">
+                    <p>Workshop</p>
+                </div>
+                <div class="sub-menu">
+                    <img src="./images/header/Logo-teckmeet.svg" alt="">
+                    <p>TeckMeet</p>
+                </div>
+                <div class="sub-menu">
+                    <img src="./images/header/Logo-job.svg" alt="">
+                    <p>Jobs</p>
+                </div>
+                <div class="sub-menu">
+                    <img src="./images/header/Logo-teckconnect.svg" alt="">
+                    <p>TeckConnect</p>
+                </div>
+                <div class="sub-menu">
+                    <img src="./images/header/Logo-voicecast.svg" alt="">
+                    <p>VoiceCast</p>
+                </div>
+                <div class="sub-menu">
+                    <img src="./images/header/Logo-messenger.svg" alt="">
+                    <p>Messenger</p>
+                </div>
+            </div>
+            <div class="ham-menu">
+                <img id="menuIcon" onclick="myFunction(this)" src="./images/header/icon-menu.svg" alt="">
+                <img id="icon-profile-desktop" class="" src="./images/main/icon-profile.png" alt="">
+            </div>
+        </div>
+
+        <div id="contentMenu" class="contentMenu hide-on-mobile">
+            <ul>
+                <li>
+                    <a href="#" class="">Workshop</a>
+                </li>
+                <li>
+                    <a href="#" class="">TeckMeet</a>
+                </li>
+                <li>
+                    <a href="#" class="">Jobs</a>
+                </li>
+                <li>
+                    <a href="#" class="">TeckConnect</a>
+                </li>
+                <li>
+                    <a href="#" class="">VoiceCast</a>
+                </li>
+                <li>
+                    <a href="#" class="">Messenger</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form class="search-form" action="">
+                <input id="search-jobs" type="text" placeholder="Search Jobs">
+                <input id="search-location" type="text" placeholder="Location">
+            </form>
+        </div>
+        <div class="container">
+            <div class="job-type">
+                <div class="job-type-card">
+                    <div class="icon-up"></div>
+                    <h1>Remote Opportunities</h1>
+                    <hr>
+                </div>
+                <div class="card">
+                    <h2>Full Stack Engineer</h2>
+                    <h3>HSBC</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatibus minus velit, maxime optio voluptas laborum iste explicabo illum, totam necessitatibus. Praesentium sunt voluptatum adipisci ipsa magni possimus ut aliquid.</p>
+                    <a class="button" href="">Quick Apply</a>
+                    <div class="logo-recruiter">
+                        <img src="./images/main/logo-hsbc.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Full Stack Engineer</h2>
+                    <h3>HSBC</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatibus minus velit, maxime optio voluptas laborum iste explicabo illum, totam necessitatibus. Praesentium sunt voluptatum adipisci ipsa magni possimus ut aliquid.</p>
+                    <a class="button" href="">Quick Apply</a>
+                    <div class="logo-recruiter">
+                        <img src="./images/main/logo-hsbc.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Full Stack Engineer</h2>
+                    <h3>HSBC</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatibus minus velit, maxime optio voluptas laborum iste explicabo illum, totam necessitatibus. Praesentium sunt voluptatum adipisci ipsa magni possimus ut aliquid.</p>
+                    <a class="button" href="">Quick Apply</a>
+                    <div class="logo-recruiter">
+                        <img src="./images/main/logo-hsbc.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
