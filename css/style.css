@@ -115,6 +115,11 @@
     /* ----------------------------------------------------------------- */
     /* BREADCRUMBS */
     /* ----------------------------------------------------------------- */
+    
+    .breadcrumbs {
+        display: flex;
+        max-width: 800px;
+    }
     /* Style the list */
     
     .breadcrumbs ul.breadcrumb {
@@ -300,8 +305,18 @@
     }
     
     @media screen and (min-width: 1012px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .breadcrumbs {
+            display: none;
+        }
+        .search-form {
+            margin-top: 60px;
+        }
         .job-type {
-            align-self: center;
             max-width: 1000px;
             gap: 2rem;
         }
