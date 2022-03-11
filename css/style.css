@@ -189,7 +189,7 @@
     }
     
     .container {
-        min-width: 280px;
+        min-width: 300px;
         height: auto;
         margin: 0 1rem;
     }
@@ -197,8 +197,9 @@
     .job-type {
         display: flex;
         flex-wrap: wrap;
-        min-width: 300px;
-        max-width: 1000px;
+        /* min-width: 300px; */
+        width: 100%;
+        /* max-width: 1000px; */
         justify-content: center;
         gap: 2.5rem;
     }
@@ -207,7 +208,8 @@
         position: relative;
         min-width: 280px;
         height: 150px;
-        width: 300px;
+        width: 100%;
+        max-width: 400px;
         margin-top: 2rem;
         margin-bottom: -4rem;
         /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(219, 236, 255, 1) 100%); */
@@ -248,7 +250,8 @@
         display: flex;
         flex-direction: column;
         height: 600px;
-        width: 300px;
+        width: 100%;
+        max-width: 400px;
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(219, 236, 255, 1) 100%);
         align-self: center;
         border-radius: 20px;
@@ -300,6 +303,11 @@
     @media screen and (min-width: 664px) {
         .job-type-card {
             width: 640px;
+            max-width: none;
+        }
+        .card {
+            max-width: none;
+            width: 300px;
         }
     }
     
